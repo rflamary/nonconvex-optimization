@@ -55,8 +55,8 @@ We recommend to look at the following files to see how to use the toolbox:
 
 # Contact
 
-* [Rémi Flamary](mailto:remi.flamary@unice.fr)
-* [Devis Tuia](mailto:devis.tuia@geo.uzh.ch)
+* [Rémi Flamary](http://remi.flamary.com/)
+* [Devis Tuia](https://sites.google.com/site/devistuia/)
 
 # References
 
