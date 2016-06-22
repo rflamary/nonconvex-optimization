@@ -50,8 +50,13 @@ We recommend to look at the following files to see how to use the toolbox:
 
 ## New regularization terms
 
-all the regularization terms (and theri proximal operators) are defined in the function [utils/get_reg_prox.m](utils/get_reg_prox.m)
+all the regularization terms (and theri proximal operators) are defined in the function [utils/get_reg_prox.m](utils/get_reg_prox.m).
 
+If you want to add a regularization term (or a projection), you only need to add a case to the switch beginning  [line 37](utils/get_reg_prox.m#L37) and define two functions:
+- g(x) : R^d->R,  loss function for the regularization term
+- prox_g(x,lambda) : R^d->R^d,  proximal operator of lambda*g(x)
+
+For a simple example look
 ## Data fitting term
 
 
