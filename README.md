@@ -50,6 +50,8 @@ We recommend to look at the following files to see how to use the toolbox:
 
 ## New regularization terms
 
+all the regularization terms (and theri proximal operators) are defined in the function [utils/get_reg_prox.m](utils/get_reg_prox.m)
+
 ## Data fitting term
 
 
