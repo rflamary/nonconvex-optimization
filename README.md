@@ -8,23 +8,29 @@ When using this toolbox in your research works please cite the following paper:
 
 D. Tuia, R. Flamary and M. Barlaud, "Non-convex regularization in remote sensing", IEEE transactions Transactions on Geoscience and Remote Sensing, (to appear) 2016.
 
-We provide solvers for solving the following estimation problems:
+The code solve optimization problems of the form:
+
+ min_x f(x)+lambda g(x)
+
+We provide solvers for solving the following data fitting terms f(x) problems:
 - Least square (linear regression)
 - Linear SVM with quadratic Hinge loss
 - Linear logistic regression
 - Calibrated Hinge loss
 
-The regularization terms that have been implemented include:
+The regularization terms g(x) that have been implemented include:
 - Lasso (l1)
 - Ridge (squared l2)
 - Log sum penalty (LSP) ([2],prox in [1])
 - lp regularization with p=1/2
 - Group lasso (l1-l2)
 - Minimax concave penalty (MCP)
+- Indicator function on convex (projection)
+- Indicator function on simplex (projection)
 
 New regularization terms can be easily implemented as discussed in section 3.
 
-# Start using
+# Start using the toolbox
 
 ## Installation
 
@@ -65,13 +71,18 @@ note that in order to limit the number of files, the loss and proximal operators
 
 ## Data fitting term
 
+You can readily chnge the data fitting term
 
 
 
-# Contact
+# Contact and contributors
 
 * [Rémi Flamary](http://remi.flamary.com/)
 * [Devis Tuia](https://sites.google.com/site/devistuia/)
+
+## Aknowledgements
+
+We want to thank [ Jose M. Bioucas Dias](http://www.lx.it.pt/~bioucas/publications.html) for providing the unmixing dataset and functions on his website.
 
 # References
 
