@@ -5,8 +5,9 @@ Non-convex optimization Toolbox
 This matlab toolbox propose a generic solver for proximal gradient descent in the convex or non-convex case. It is a complete reimplementation of the GIST algorithm proposed in [1] with new regularization terms such as the lp pseudo-norm with p=1/2.
 
 When using this toolbox in your research works please cite the following paper:
-
+```
 D. Tuia, R. Flamary and M. Barlaud, "Non-convex regularization in remote sensing", IEEE transactions Transactions on Geoscience and Remote Sensing, (to appear) 2016.
+```
 
 The code solve optimization problems of the form:
 
@@ -74,6 +75,8 @@ note that in order to limit the number of files, the loss and proximal operators
 You can easily change the data fitting term by providing a new loss and gradient functions to the optimization function [utils/gist_opt.m](utils/gist_opt.m).
 
 A good starting point is by looking at the least square implementation in [utils/gist_least.m](utils/gist_least.m). Changing the data fitting term correspond to only code the loss function at  [Line 63](utils/gist_least.m#L63) and the corresponding gradient function at [Line 63](utils/gist_least.m#L59).
+
+
 
 
 
