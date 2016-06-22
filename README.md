@@ -56,7 +56,9 @@ If you want to add a regularization term (or a projection), you only need to add
 - g(x) : R^d->R,  loss function for the regularization term
 - prox_g(x,lambda) : R^d->R^d,  proximal operator of lambda*g(x)
 
-For a simple example look
+For a simple example look at the implementations of the Lasso loss ([line 124](utils/get_reg_prox.m#L124)) soft thresholding ([Line 128](utils/get_reg_prox.m#L128)) and loss implementations.
+
+
 ## Data fitting term
 
 
