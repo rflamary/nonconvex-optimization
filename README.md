@@ -6,7 +6,8 @@ This matlab toolbox propose a generic solver for proximal gradient descent in th
 
 When using this toolbox in your research works please cite the following paper:
 ```
-D. Tuia, R. Flamary and M. Barlaud, "Non-convex regularization in remote sensing", IEEE transactions Transactions on Geoscience and Remote Sensing, (to appear) 2016.
+D. Tuia, R. Flamary and M. Barlaud, "Non-convex regularization in remote sensing", 
+IEEE transactions Transactions on Geoscience and Remote Sensing, (to appear) 2016.
 ```
 
 The code solve optimization problems of the form:
