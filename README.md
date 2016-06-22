@@ -71,7 +71,9 @@ note that in order to limit the number of files, the loss and proximal operators
 
 ## Data fitting term
 
-You can readily chnge the data fitting term
+You can easily change the data fitting term by providing a new loss and gradient functions to the optimization function [utils/gist_opt.m](utils/gist_opt.m).
+
+A good starting point is by looking at the least square implementation in [utils/gist_least.m](utils/gist_least.m). Changing the data fitting term correspond to only code the loss function at  [Line 63](utils/gist_least.m#L63) and the corresponding gradient function at [Line 63](utils/gist_least.m#L59).
 
 
 
