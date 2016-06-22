@@ -14,7 +14,7 @@ We provide solvers for solving the following estimation problems:
 - Linear logistic regression
 - Calibrated Hinge loss
 
-The regularization terms that have been coded include:
+The regularization terms that have been implemented include:
 - Lasso (l1)
 - Ridge (squared l2)
 - Log sum penalty (LSP) ([2],prox in [1])
@@ -24,7 +24,9 @@ The regularization terms that have been coded include:
 
 New regularization terms can be easily implemented as discussed in section 3.
 
-# Installation
+# Start using
+
+## Installation
 
 All the functions in the toolbox a given in the folder /utils.
 
@@ -39,7 +41,7 @@ addpath(genpath('.'))
 if you are not working in the root folder of the toolbox or replacing '.' by the location of the folder on your machine.
 
 
-# Entry points
+## Entry points
 
 We recommend to look at the following files to see how to use the toolbox:
 * demo/demo_classif.m : contains an example of 4 class linear classification problem and show how to learn different classifiers.
@@ -50,7 +52,7 @@ We recommend to look at the following files to see how to use the toolbox:
 
 ## New regularization terms
 
-all the regularization terms (and theri proximal operators) are defined in the function [utils/get_reg_prox.m](utils/get_reg_prox.m).
+All the regularization terms (and theri proximal operators) are defined in the function [utils/get_reg_prox.m](utils/get_reg_prox.m).
 
 If you want to add a regularization term (or a projection), you only need to add a case to the switch beginning  [line 37](utils/get_reg_prox.m#L37) and define two functions:
 - g(x) : R^d->R,  loss function for the regularization term
@@ -58,8 +60,12 @@ If you want to add a regularization term (or a projection), you only need to add
 
 For a simple example look at the implementations of the Lasso loss ([line 124](utils/get_reg_prox.m#L124)) soft thresholding ([Line 128](utils/get_reg_prox.m#L128)) and loss implementations.
 
+note that in order to limit the number of files, the loss and proximal operators functions are all implemented as subfunctions of file [utils/get_reg_prox.m](utils/get_reg_prox.m).
+
 
 ## Data fitting term
+
+
 
 
 # Contact
