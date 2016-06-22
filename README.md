@@ -23,7 +23,7 @@ The regularization terms g(x) that have been implemented include:
 - Lasso (l1)
 - Ridge (squared l2)
 - Log sum penalty (LSP) ([2],prox in [1])
-- lp regularization with p=1/2
+- lp regularization with p=1/2 (prox in [3])
 - Group lasso (l1-l2)
 - Minimax concave penalty (MCP)
 - Indicator function on convex (projection)
@@ -94,5 +94,9 @@ We want to thank [ Jose M. Bioucas Dias](http://www.lx.it.pt/~bioucas/publicatio
 [1] Gong, P., Zhang, C., Lu, Z., Huang, J., & Ye, J. (2013, June). A General Iterative Shrinkage and Thresholding Algorithm for Non-convex Regularized Optimization Problems. In ICML (2) (pp. 37-45).
 
 [2] Candes, E. J., Wakin, M. B., & Boyd, S. P. (2008). Enhancing sparsity by reweighted ? 1 minimization. Journal of Fourier analysis and applications, 14(5-6), 877-905.
+
+[3] Xu, Z., Chang, X., Xu, F., & Zhang, H. (2012). L1/2 regularization: A thresholding representation theory and a fast solver. IEEE Transactions on neural networks and learning systems, 23(7), 1013-1027.
+
+
 
 Copyright 2016
