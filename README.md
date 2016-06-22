@@ -4,8 +4,6 @@ Non-convex optimization Toolbox
 
 This matlab toolbox propose a generic solver for proximal gradient descent in the convex or non-convex case. It is a complete reimplementation of the GIST algorithm proposed in [1] with new regularization terms such as the lp pseudo-norm with p=1/2.
 
-The unmix folder contains code downloaded from the website of [ Jose M. Bioucas Dias](http://www.lx.it.pt/~bioucas/publications.html).
-
 When using this toolbox in your research works please cite the following paper:
 
 D. Tuia, R. Flamary and M. Barlaud, "Non-convex regularization in remote sensing", IEEE transactions Transactions on Geoscience and Remote Sensing, (to appear) 2016.
@@ -28,7 +26,9 @@ New regularization terms can be easily implemented as discussed in section 3.
 
 # Installation
 
-All the functions in the toolbox a given in the subfolders u/unmix and /utils.
+All the functions in the toolbox a given in the folder /utils.
+
+The unmix folder contains code and data downloaded from the website of [ Jose M. Bioucas Dias](http://www.lx.it.pt/~bioucas/publications.html).
 
 In order to use the function we recommend to execute the following command
 
@@ -36,15 +36,15 @@ In order to use the function we recommend to execute the following command
 addpath(genpath('.'))
 ```
 
-if you are working in the root folder of the toolbox or replacing '.' by the location of the folder on your machine.
+if you are not working in the root folder of the toolbox or replacing '.' by the location of the folder on your machine.
 
 
 # Entry points
 
 We recommend to look at the following files to see how to use the toolbox:
-* demo_classif.m : contains an example of 4 class linear classification problem and show how to learn different classifiers.
-* demo_unmix.m : show an example of linear unmixing with positivity constraint and non-convex regularization.
-* visu_classif.m : reproduce the example figure in the paper.
+* demo/demo_classif.m : contains an example of 4 class linear classification problem and show how to learn different classifiers.
+* demo/demo_unmix.m : show an example of linear unmixing with positivity constraint and non-convex regularization.
+* demo/visu_classif.m : reproduce the example figure in the paper.
 
 # Solving your own optimization problem
 
